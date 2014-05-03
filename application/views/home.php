@@ -10,6 +10,15 @@
           <th>High</th>
           <th>Low</th>
         </thead>
+        <tbody>
+          <tr>
+            <td>AAPL</td>
+            <td>Apple, Inc</td>
+            <td>$232</td>
+            <td>$32</td>
+            <td>$2</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

@@ -7,17 +7,15 @@
           <th>Symbol</th>
           <th>Name</th>
           <th>Last</th>
-          <th>High</th>
-          <th>Low</th>
         </thead>
         <tbody>
-          <tr>
-            <td>AAPL</td>
-            <td>Apple, Inc</td>
-            <td>$232</td>
-            <td>$32</td>
-            <td>$2</td>
-          </tr>
+          <?php foreach($stocks as $stock): ?>
+            <tr>
+              <td><?php echo $stock['symbol']; ?></td>
+              <td><?php echo $stock['name']; ?></td>
+              <td><?php echo $stock['last']; ?></td>
+            </tr>
+          <?php endforeach; ?>
         </tbody>
       </table>
     </div>

@@ -4,18 +4,8 @@ class Home extends CI_Controller {
 
   public function index()
   {
-    $stocks = array(
-      array(
-        'symbol'    =>  'BBY',
-        'name'      =>  'Best Buy',
-        'last'      =>  '42.12'
-      ),
-      array(
-        'symbol'    =>  'GOOG',
-        'name'      =>  'GOOGLE INC',
-        'last'      =>  '420'
-      ),      
-    );
+    $this->load->model('Stock_model');
+    $stocks = $this->Stock_model->get_stocks();
 
     $this->template->set('stocks', $stocks);
 

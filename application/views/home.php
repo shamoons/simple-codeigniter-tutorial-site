@@ -11,9 +11,9 @@
         <tbody>
           <?php foreach($stocks as $stock): ?>
             <tr>
-              <td><?php echo $mystock['symbol']; ?></td>
-              <td><?php echo $mystock['name']; ?></td>
-              <td><?php echo $mystock['last']; ?></td>
+              <td><?php echo $stock[0]; ?></td>
+              <td><?php echo $stock[1]; ?></td>
+              <td><?php echo $stock[2]; ?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>
